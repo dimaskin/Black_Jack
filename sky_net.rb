@@ -1,0 +1,3 @@
+class SkyNet < Gamer
+
+end
