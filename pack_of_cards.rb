@@ -4,14 +4,16 @@ class PackOfCards
   HEARTS = "\u2661".encode('utf-8') #червы
   SPADES = "\u2664".encode('utf-8') #пики
 
+  SUITS = [ CLUBS, DIAMS, HEARTS, SPADES ]
+  CARDS = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+
   def initilize
 
   end
 
-  def print_clubs
-  	p CLUBS
-  	p DIAMS
-    p HEARTS
-    p SPADES
+  def create_deck
+    deck = SUITS.product(CARDS)
+    deck.shuffle!
   end
+
 end
