@@ -1,4 +1,4 @@
-class People < Gamer
+class Human < Gamer
   def initialize(name)
     super
     @name = name

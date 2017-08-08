@@ -12,7 +12,7 @@ class PackOfCards
   end
 
   def create_deck
-    deck = SUITS.product(CARDS)
+    deck = CARDS.product(SUITS)
     deck.shuffle!
   end
 
