@@ -17,4 +17,5 @@ class Game
   end
 end
 
-Game.begin_game
+game = Game.new
+game.begin_game
