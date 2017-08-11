@@ -1,4 +1,4 @@
-class PackOfCards
+class Deck
   CLUBS  = "\u2663".encode('utf-8') #трефы
   DIAMS  = "\u2666".encode('utf-8') #бубны
   HEARTS = "\u2661".encode('utf-8') #червы
@@ -6,10 +6,6 @@ class PackOfCards
 
   SUITS = [ CLUBS, DIAMS, HEARTS, SPADES ]
   CARDS = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
-
-  def initilize
-
-  end
 
   def create_deck
     deck = CARDS.product(SUITS)
